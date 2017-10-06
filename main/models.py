@@ -9,26 +9,24 @@ from django.contrib.contenttypes.fields import GenericRelation
 # Create your models here.
 
 class Permission(models.Model):
-    name = models.ChartField(max_length=32)
-    description = models.ChartField(max_length=64)
-    content_type = models.ForeignKey(ContentType)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey('content_type', 'object_id')
+    name = models.CharField(max_length=32)
+    description = models.CharField(max_length=64)
+
 
 class Category(models.Model):
-    name = models.ChartField(max_length=32)
-    description = models.ChartField(max_length=64)
+    name = models.CharField(max_length=32)
+    description = models.CharField(max_length=64)
 
 
 class Group(models.Model):
-    name = models.ChartField(max_length=32)
-    description = models.ChartField(max_length=64)
-    red = models.ChartField(max_length=64)
-    subnet = models.ChartField(max_length=128)
-    persmission = GenericRelation(persmission)
+    name = models.CharField(max_length=32)
+    description = models.CharField(max_length=64)
+    red = models.CharField(max_length=64)
+    subnet = models.CharField(max_length=128)
+    persmission = GenericRelation(Permission)
 
-class Person(models.Modal):
-    name = models.ChartField(max_length=32)
-    description = models.ChartField(max_length=64)
-    ip = models.ChartField(max_length=64)
-    persmission = GenericRelation(persmission)
+class Person(models.Model):
+    name = models.CharField(max_length=32)
+    description = models.CharField(max_length=64)
+    ip = models.CharField(max_length=64)
+    permission = GenericRelation(Permission)
