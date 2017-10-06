@@ -18,7 +18,7 @@
 <body class="grey lighten-4">
     <div class="row">
         <ul id="slide-out" class="col m4 l3 side-nav fixed green accent-3 z-depth-2 hide-on-small-only tr">
-            <div class="center"><span class="black-text">CENTRO DE GESTION</span></div>
+            <div class="center"><a class="black-text">CENTRO DE GESTION</a></div>
             <div class="divider green darken-1"></div>
             <div class="v-align">
                 <li><a id="btn-ca" href="#!"><i class="material-icons">add</i><span>Categoria</span></a></li>
@@ -163,7 +163,7 @@
             $("#aula-form").hide();
 
             $('.button-collapse').sideNav();
-            $(".side-nav a").click(function(e) {
+            $(".side-nav li a").click(function(e) {
                 if (ani_completed == false) {
 
                     switch ($(this).attr('id')) {
@@ -180,8 +180,8 @@
                             $("#aula-form").delay(300).fadeIn("fast");
                             break;
                     }
-                    $('.side-nav a').not(this).each(function() {
-                        $(".side-nav i").text("remove");
+                    $('.side-nav li a').not(this).each(function() {
+                        $(".side-nav li i").text("remove");
 
                         $(this).css({
                             "visibility": "hidden",
@@ -197,8 +197,8 @@
                     });
                     ani_completed = true;
                 } else {
-                    $('.side-nav a').not(this).each(function() {
-                        $(".side-nav i").text("add");
+                    $('.side-nav li a').not(this).each(function() {
+                        $(".side-nav li i").text("add");
                         $(this).css({
                             "visibility": "visible",
                             display: 'block'
