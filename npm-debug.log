@@ -1,0 +1,1150 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'sass-watch' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData sass-watch
+8 silly fetchNamedPackageData sass-watch
+9 silly mapToRegistry name sass-watch
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/sass-watch
+13 verbose request uri https://registry.npmjs.org/sass-watch
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 11:07:36 a. m.
+16 verbose request id 2fd41c30b4dcb519
+17 verbose etag W/"51cc3f92-a0b"
+18 verbose lastModified Thu, 27 Jun 2013 13:35:14 GMT
+19 http request GET https://registry.npmjs.org/sass-watch
+20 http 304 https://registry.npmjs.org/sass-watch
+21 verbose headers { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   etag: 'W/"51cc3f92-a0b"',
+21 verbose headers   age: '13',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-gru17123-GRU',
+21 verbose headers   'x-cache': 'HIT',
+21 verbose headers   'x-cache-hits': '1',
+21 verbose headers   'x-timer': 'S1505743656.474195,VS0,VE0',
+21 verbose headers   vary: 'Accept-Encoding, Accept' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     etag: 'W/"51cc3f92-a0b"',
+22 silly get     age: '13',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-gru17123-GRU',
+22 silly get     'x-cache': 'HIT',
+22 silly get     'x-cache-hits': '1',
+22 silly get     'x-timer': 'S1505743656.474195,VS0,VE0',
+22 silly get     vary: 'Accept-Encoding, Accept' } ]
+23 verbose etag https://registry.npmjs.org/sass-watch from cache
+24 verbose get saving sass-watch to /home/fran/.npm/registry.npmjs.org/sass-watch/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule sass-watch@0.1.0 checking installable status
+38 silly cache add args [ 'sass-watch', null ]
+39 verbose cache add spec sass-watch
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'sass-watch',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'sass-watch',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed sass-watch@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for sass-watch
+43 info addNameTag [ 'sass-watch', 'latest' ]
+44 silly mapToRegistry name sass-watch
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/sass-watch
+48 verbose addNameTag registry:https://registry.npmjs.org/sass-watch not in flight; fetching
+49 verbose get https://registry.npmjs.org/sass-watch not expired, no request
+50 silly addNameTag next cb for sass-watch with tag latest
+51 silly addNamed sass-watch@0.1.0
+52 verbose addNamed "0.1.0" is a plain semver version for sass-watch
+53 silly cache afterAdd sass-watch@0.1.0
+54 verbose afterAdd /home/fran/.npm/sass-watch/0.1.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/fran/.npm/sass-watch/0.1.0/package/package.json written
+56 silly fetchNamedPackageData node-sass
+57 silly mapToRegistry name node-sass
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+61 silly fetchNamedPackageData chokidar
+62 silly mapToRegistry name chokidar
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/chokidar
+66 verbose request uri https://registry.npmjs.org/chokidar
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 11:07:36 a. m.
+69 verbose etag W/"59bcb4da-1c52c"
+70 verbose lastModified Sat, 16 Sep 2017 05:21:30 GMT
+71 http request GET https://registry.npmjs.org/chokidar
+72 verbose request uri https://registry.npmjs.org/node-sass
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 11:07:36 a. m.
+75 verbose etag W/"59badb31-3d6b4"
+76 verbose lastModified Thu, 14 Sep 2017 19:40:33 GMT
+77 http request GET https://registry.npmjs.org/node-sass
+78 http 304 https://registry.npmjs.org/node-sass
+79 verbose headers { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+79 verbose headers   via: '1.1 varnish',
+79 verbose headers   'cache-control': 'max-age=300',
+79 verbose headers   etag: 'W/"59badb31-3d6b4"',
+79 verbose headers   age: '106',
+79 verbose headers   connection: 'keep-alive',
+79 verbose headers   'x-served-by': 'cache-gru17135-GRU',
+79 verbose headers   'x-cache': 'HIT',
+79 verbose headers   'x-cache-hits': '2',
+79 verbose headers   'x-timer': 'S1505743657.700874,VS0,VE0',
+79 verbose headers   vary: 'Accept-Encoding, Accept' }
+80 silly get cb [ 304,
+80 silly get   { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+80 silly get     via: '1.1 varnish',
+80 silly get     'cache-control': 'max-age=300',
+80 silly get     etag: 'W/"59badb31-3d6b4"',
+80 silly get     age: '106',
+80 silly get     connection: 'keep-alive',
+80 silly get     'x-served-by': 'cache-gru17135-GRU',
+80 silly get     'x-cache': 'HIT',
+80 silly get     'x-cache-hits': '2',
+80 silly get     'x-timer': 'S1505743657.700874,VS0,VE0',
+80 silly get     vary: 'Accept-Encoding, Accept' } ]
+81 verbose etag https://registry.npmjs.org/node-sass from cache
+82 verbose get saving node-sass to /home/fran/.npm/registry.npmjs.org/node-sass/.cache.json
+83 http 304 https://registry.npmjs.org/chokidar
+84 verbose headers { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+84 verbose headers   via: '1.1 varnish',
+84 verbose headers   'cache-control': 'max-age=300',
+84 verbose headers   etag: 'W/"59bcb4da-1c52c"',
+84 verbose headers   age: '202',
+84 verbose headers   connection: 'keep-alive',
+84 verbose headers   'x-served-by': 'cache-gru17133-GRU',
+84 verbose headers   'x-cache': 'HIT',
+84 verbose headers   'x-cache-hits': '5',
+84 verbose headers   'x-timer': 'S1505743657.706145,VS0,VE0',
+84 verbose headers   vary: 'Accept-Encoding, Accept' }
+85 silly get cb [ 304,
+85 silly get   { date: 'Mon, 18 Sep 2017 14:07:36 GMT',
+85 silly get     via: '1.1 varnish',
+85 silly get     'cache-control': 'max-age=300',
+85 silly get     etag: 'W/"59bcb4da-1c52c"',
+85 silly get     age: '202',
+85 silly get     connection: 'keep-alive',
+85 silly get     'x-served-by': 'cache-gru17133-GRU',
+85 silly get     'x-cache': 'HIT',
+85 silly get     'x-cache-hits': '5',
+85 silly get     'x-timer': 'S1505743657.706145,VS0,VE0',
+85 silly get     vary: 'Accept-Encoding, Accept' } ]
+86 verbose etag https://registry.npmjs.org/chokidar from cache
+87 verbose get saving chokidar to /home/fran/.npm/registry.npmjs.org/chokidar/.cache.json
+88 silly resolveWithNewModule node-sass@0.5.4 checking installable status
+89 silly cache add args [ 'node-sass@~0.5.2', null ]
+90 verbose cache add spec node-sass@~0.5.2
+91 silly cache add parsed spec Result {
+91 silly cache add   raw: 'node-sass@~0.5.2',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'node-sass',
+91 silly cache add   rawSpec: '~0.5.2',
+91 silly cache add   spec: '>=0.5.2 <0.6.0',
+91 silly cache add   type: 'range' }
+92 silly addNamed node-sass@>=0.5.2 <0.6.0
+93 verbose addNamed ">=0.5.2 <0.6.0" is a valid semver range for node-sass
+94 silly addNameRange { name: 'node-sass', range: '>=0.5.2 <0.6.0', hasData: false }
+95 silly mapToRegistry name node-sass
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+99 verbose addNameRange registry:https://registry.npmjs.org/node-sass not in flight; fetching
+100 silly resolveWithNewModule chokidar@0.6.3 checking installable status
+101 silly cache add args [ 'chokidar@~0.6.2', null ]
+102 verbose cache add spec chokidar@~0.6.2
+103 silly cache add parsed spec Result {
+103 silly cache add   raw: 'chokidar@~0.6.2',
+103 silly cache add   scope: null,
+103 silly cache add   name: 'chokidar',
+103 silly cache add   rawSpec: '~0.6.2',
+103 silly cache add   spec: '>=0.6.2 <0.7.0',
+103 silly cache add   type: 'range' }
+104 silly addNamed chokidar@>=0.6.2 <0.7.0
+105 verbose addNamed ">=0.6.2 <0.7.0" is a valid semver range for chokidar
+106 silly addNameRange { name: 'chokidar', range: '>=0.6.2 <0.7.0', hasData: false }
+107 silly mapToRegistry name chokidar
+108 silly mapToRegistry using default registry
+109 silly mapToRegistry registry https://registry.npmjs.org/
+110 silly mapToRegistry uri https://registry.npmjs.org/chokidar
+111 verbose addNameRange registry:https://registry.npmjs.org/chokidar not in flight; fetching
+112 verbose get https://registry.npmjs.org/chokidar not expired, no request
+113 silly addNameRange number 2 { name: 'chokidar', range: '>=0.6.2 <0.7.0', hasData: true }
+114 silly addNameRange versions [ 'chokidar',
+114 silly addNameRange   [ '0.1.1',
+114 silly addNameRange     '0.2.0',
+114 silly addNameRange     '0.2.1',
+114 silly addNameRange     '0.2.2',
+114 silly addNameRange     '0.2.3',
+114 silly addNameRange     '0.2.4',
+114 silly addNameRange     '0.2.5',
+114 silly addNameRange     '0.2.6',
+114 silly addNameRange     '0.3.0',
+114 silly addNameRange     '0.4.0',
+114 silly addNameRange     '0.5.0',
+114 silly addNameRange     '0.5.1',
+114 silly addNameRange     '0.5.2',
+114 silly addNameRange     '0.5.3',
+114 silly addNameRange     '0.6.0',
+114 silly addNameRange     '0.6.1',
+114 silly addNameRange     '0.6.2',
+114 silly addNameRange     '0.6.3',
+114 silly addNameRange     '0.7.0',
+114 silly addNameRange     '0.7.1',
+114 silly addNameRange     '0.8.0',
+114 silly addNameRange     '0.8.1',
+114 silly addNameRange     '0.8.2',
+114 silly addNameRange     '0.8.3',
+114 silly addNameRange     '0.8.4',
+114 silly addNameRange     '0.9.0',
+114 silly addNameRange     '0.10.0',
+114 silly addNameRange     '0.10.1',
+114 silly addNameRange     '0.10.2',
+114 silly addNameRange     '0.10.3',
+114 silly addNameRange     '0.10.4',
+114 silly addNameRange     '0.10.5',
+114 silly addNameRange     '0.10.6',
+114 silly addNameRange     '0.10.7',
+114 silly addNameRange     '0.10.8',
+114 silly addNameRange     '0.10.9',
+114 silly addNameRange     '0.11.0',
+114 silly addNameRange     '0.11.1',
+114 silly addNameRange     '0.12.0',
+114 silly addNameRange     '0.12.1',
+114 silly addNameRange     '0.12.2',
+114 silly addNameRange     '0.12.3',
+114 silly addNameRange     '0.12.4',
+114 silly addNameRange     '0.12.5',
+114 silly addNameRange     '0.12.6',
+114 silly addNameRange     '1.0.0-rc1',
+114 silly addNameRange     '1.0.0-rc1.1',
+114 silly addNameRange     '1.0.0-rc2',
+114 silly addNameRange     '1.0.0-rc3',
+114 silly addNameRange     '1.0.0-rc4',
+114 silly addNameRange     '1.0.0-rc5',
+114 silly addNameRange     '1.0.0',
+114 silly addNameRange     '1.0.1',
+114 silly addNameRange     '1.0.2',
+114 silly addNameRange     '1.0.3',
+114 silly addNameRange     '1.0.4',
+114 silly addNameRange     '1.0.5',
+114 silly addNameRange     '1.0.6',
+114 silly addNameRange     '1.1.0',
+114 silly addNameRange     '1.2.0',
+114 silly addNameRange     '1.3.0',
+114 silly addNameRange     '1.4.0',
+114 silly addNameRange     '1.4.1',
+114 silly addNameRange     '1.4.2',
+114 silly addNameRange     '1.4.3',
+114 silly addNameRange     '1.5.0',
+114 silly addNameRange     '1.5.1',
+114 silly addNameRange     '1.5.2',
+114 silly addNameRange     '1.6.0',
+114 silly addNameRange     '1.6.1',
+114 silly addNameRange     '1.7.0' ] ]
+115 silly addNamed chokidar@0.6.3
+116 verbose addNamed "0.6.3" is a plain semver version for chokidar
+117 verbose get https://registry.npmjs.org/node-sass not expired, no request
+118 silly addNameRange number 2 { name: 'node-sass', range: '>=0.5.2 <0.6.0', hasData: true }
+119 silly addNameRange versions [ 'node-sass',
+119 silly addNameRange   [ '0.2.0',
+119 silly addNameRange     '0.2.1',
+119 silly addNameRange     '0.2.2',
+119 silly addNameRange     '0.2.3',
+119 silly addNameRange     '0.2.4',
+119 silly addNameRange     '0.2.5',
+119 silly addNameRange     '0.2.6',
+119 silly addNameRange     '0.3.0',
+119 silly addNameRange     '0.4.0',
+119 silly addNameRange     '0.4.1',
+119 silly addNameRange     '0.4.2',
+119 silly addNameRange     '0.4.3',
+119 silly addNameRange     '0.4.4',
+119 silly addNameRange     '0.5.0',
+119 silly addNameRange     '0.5.1',
+119 silly addNameRange     '0.5.2',
+119 silly addNameRange     '0.5.3',
+119 silly addNameRange     '0.5.4',
+119 silly addNameRange     '0.6.0',
+119 silly addNameRange     '0.6.1',
+119 silly addNameRange     '0.6.2',
+119 silly addNameRange     '0.6.3',
+119 silly addNameRange     '0.6.4',
+119 silly addNameRange     '0.6.5',
+119 silly addNameRange     '0.6.6',
+119 silly addNameRange     '0.6.7',
+119 silly addNameRange     '0.7.0-alpha',
+119 silly addNameRange     '0.7.0',
+119 silly addNameRange     '0.8.0',
+119 silly addNameRange     '0.8.1',
+119 silly addNameRange     '0.8.2',
+119 silly addNameRange     '0.8.3',
+119 silly addNameRange     '0.8.4',
+119 silly addNameRange     '0.8.5',
+119 silly addNameRange     '0.8.6',
+119 silly addNameRange     '0.9.0',
+119 silly addNameRange     '0.9.1',
+119 silly addNameRange     '0.9.2',
+119 silly addNameRange     '0.9.3',
+119 silly addNameRange     '0.9.4-rc1',
+119 silly addNameRange     '0.9.4',
+119 silly addNameRange     '0.9.5-rc1',
+119 silly addNameRange     '0.9.5',
+119 silly addNameRange     '0.9.6',
+119 silly addNameRange     '1.0.0',
+119 silly addNameRange     '1.0.1',
+119 silly addNameRange     '1.0.2-alpha',
+119 silly addNameRange     '1.0.2',
+119 silly addNameRange     '1.0.3',
+119 silly addNameRange     '1.1.0',
+119 silly addNameRange     '1.1.1',
+119 silly addNameRange     '1.1.2',
+119 silly addNameRange     '1.1.3',
+119 silly addNameRange     '1.1.4',
+119 silly addNameRange     '1.2.0',
+119 silly addNameRange     '1.2.1',
+119 silly addNameRange     '1.2.2',
+119 silly addNameRange     '1.2.3',
+119 silly addNameRange     '2.0.0-beta',
+119 silly addNameRange     '2.0.0',
+119 silly addNameRange     '2.0.1',
+119 silly addNameRange     '3.0.0-alpha.0',
+119 silly addNameRange     '3.0.0-beta.2',
+119 silly addNameRange     '3.0.0-beta.3',
+119 silly addNameRange     '3.0.0-beta.4',
+119 silly addNameRange     '2.1.0',
+119 silly addNameRange     '2.1.1',
+119 silly addNameRange     '3.0.0-beta.5',
+119 silly addNameRange     '3.0.0-beta.7',
+119 silly addNameRange     '3.0.0',
+119 silly addNameRange     '3.1.0',
+119 silly addNameRange     '3.1.1',
+119 silly addNameRange     '3.1.2',
+119 silly addNameRange     '3.2.0',
+119 silly addNameRange     '3.3.0',
+119 silly addNameRange     '3.3.1',
+119 silly addNameRange     '3.3.2',
+119 silly addNameRange     '3.3.3',
+119 silly addNameRange     '3.4.0-beta1',
+119 silly addNameRange     '3.4.0-beta.2',
+119 silly addNameRange     '3.4.0',
+119 silly addNameRange     '3.4.1',
+119 silly addNameRange     '3.4.2',
+119 silly addNameRange     '3.5.0-beta.1',
+119 silly addNameRange     '3.5.1',
+119 silly addNameRange     '3.5.2',
+119 silly addNameRange     '3.5.3',
+119 silly addNameRange     '3.6.0',
+119 silly addNameRange     '3.7.0',
+119 silly addNameRange     '3.8.0',
+119 silly addNameRange     '3.9.0',
+119 silly addNameRange     '3.9.1',
+119 silly addNameRange     '3.9.2',
+119 silly addNameRange     '3.9.3',
+119 silly addNameRange     '3.10.0',
+119 silly addNameRange     '3.10.0-1',
+119 silly addNameRange     '3.10.1',
+119 silly addNameRange     '3.11.0',
+119 silly addNameRange     '3.11.1',
+119 silly addNameRange     '3.11.2',
+119 silly addNameRange     '3.11.3',
+119 silly addNameRange     '3.12.0',
+119 silly addNameRange     '3.12.1',
+119 silly addNameRange     '3.12.2',
+119 silly addNameRange     '3.12.3',
+119 silly addNameRange     '3.12.4',
+119 silly addNameRange     '3.12.5',
+119 silly addNameRange     '3.13.0',
+119 silly addNameRange     '3.14.0-0',
+119 silly addNameRange     '3.13.1',
+119 silly addNameRange     '4.0.0',
+119 silly addNameRange     '4.1.0',
+119 silly addNameRange     '4.1.1',
+119 silly addNameRange     '4.2.0',
+119 silly addNameRange     '4.3.0',
+119 silly addNameRange     '4.4.0',
+119 silly addNameRange     '4.5.0',
+119 silly addNameRange     '4.5.1',
+119 silly addNameRange     '4.5.2',
+119 silly addNameRange     '4.5.3' ] ]
+120 silly addNamed node-sass@0.5.4
+121 verbose addNamed "0.5.4" is a plain semver version for node-sass
+122 silly cache afterAdd chokidar@0.6.3
+123 verbose afterAdd /home/fran/.npm/chokidar/0.6.3/package/package.json not in flight; writing
+124 silly cache afterAdd node-sass@0.5.4
+125 verbose afterAdd /home/fran/.npm/node-sass/0.5.4/package/package.json not in flight; writing
+126 verbose afterAdd /home/fran/.npm/chokidar/0.6.3/package/package.json written
+127 verbose afterAdd /home/fran/.npm/node-sass/0.5.4/package/package.json written
+128 silly fetchNamedPackageData mkdirp
+129 silly mapToRegistry name mkdirp
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+133 silly fetchNamedPackageData colors
+134 silly mapToRegistry name colors
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry uri https://registry.npmjs.org/colors
+138 silly fetchNamedPackageData optimist
+139 silly mapToRegistry name optimist
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry uri https://registry.npmjs.org/optimist
+143 verbose request uri https://registry.npmjs.org/mkdirp
+144 verbose request no auth needed
+145 info attempt registry request try #1 at 11:07:36 a. m.
+146 verbose etag W/"59be4178-670c"
+147 verbose lastModified Sun, 17 Sep 2017 09:33:44 GMT
+148 http request GET https://registry.npmjs.org/mkdirp
+149 verbose request uri https://registry.npmjs.org/optimist
+150 verbose request no auth needed
+151 info attempt registry request try #1 at 11:07:36 a. m.
+152 verbose etag W/"59bcb5d2-b851"
+153 verbose lastModified Sat, 16 Sep 2017 05:25:38 GMT
+154 http request GET https://registry.npmjs.org/optimist
+155 verbose request uri https://registry.npmjs.org/colors
+156 verbose request no auth needed
+157 info attempt registry request try #1 at 11:07:36 a. m.
+158 verbose etag W/"59b139c9-5a9e"
+159 verbose lastModified Thu, 07 Sep 2017 12:21:29 GMT
+160 http request GET https://registry.npmjs.org/colors
+161 http 304 https://registry.npmjs.org/optimist
+162 verbose headers { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   'cache-control': 'max-age=300',
+162 verbose headers   etag: 'W/"59bcb5d2-b851"',
+162 verbose headers   age: '86',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-gru17122-GRU',
+162 verbose headers   'x-cache': 'HIT',
+162 verbose headers   'x-cache-hits': '12',
+162 verbose headers   'x-timer': 'S1505743657.031982,VS0,VE0',
+162 verbose headers   vary: 'Accept-Encoding, Accept' }
+163 silly get cb [ 304,
+163 silly get   { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     'cache-control': 'max-age=300',
+163 silly get     etag: 'W/"59bcb5d2-b851"',
+163 silly get     age: '86',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-gru17122-GRU',
+163 silly get     'x-cache': 'HIT',
+163 silly get     'x-cache-hits': '12',
+163 silly get     'x-timer': 'S1505743657.031982,VS0,VE0',
+163 silly get     vary: 'Accept-Encoding, Accept' } ]
+164 verbose etag https://registry.npmjs.org/optimist from cache
+165 verbose get saving optimist to /home/fran/.npm/registry.npmjs.org/optimist/.cache.json
+166 silly resolveWithNewModule optimist@0.4.0 checking installable status
+167 silly cache add args [ 'optimist@0.4.x', null ]
+168 verbose cache add spec optimist@0.4.x
+169 silly cache add parsed spec Result {
+169 silly cache add   raw: 'optimist@0.4.x',
+169 silly cache add   scope: null,
+169 silly cache add   name: 'optimist',
+169 silly cache add   rawSpec: '0.4.x',
+169 silly cache add   spec: '>=0.4.0 <0.5.0',
+169 silly cache add   type: 'range' }
+170 silly addNamed optimist@>=0.4.0 <0.5.0
+171 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for optimist
+172 silly addNameRange { name: 'optimist', range: '>=0.4.0 <0.5.0', hasData: false }
+173 silly mapToRegistry name optimist
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/optimist
+177 verbose addNameRange registry:https://registry.npmjs.org/optimist not in flight; fetching
+178 http 304 https://registry.npmjs.org/colors
+179 verbose headers { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+179 verbose headers   via: '1.1 varnish',
+179 verbose headers   'cache-control': 'max-age=300',
+179 verbose headers   etag: 'W/"59b139c9-5a9e"',
+179 verbose headers   age: '42',
+179 verbose headers   connection: 'keep-alive',
+179 verbose headers   'x-served-by': 'cache-gru17121-GRU',
+179 verbose headers   'x-cache': 'HIT',
+179 verbose headers   'x-cache-hits': '1',
+179 verbose headers   'x-timer': 'S1505743657.037542,VS0,VE1',
+179 verbose headers   vary: 'Accept-Encoding, Accept' }
+180 silly get cb [ 304,
+180 silly get   { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+180 silly get     via: '1.1 varnish',
+180 silly get     'cache-control': 'max-age=300',
+180 silly get     etag: 'W/"59b139c9-5a9e"',
+180 silly get     age: '42',
+180 silly get     connection: 'keep-alive',
+180 silly get     'x-served-by': 'cache-gru17121-GRU',
+180 silly get     'x-cache': 'HIT',
+180 silly get     'x-cache-hits': '1',
+180 silly get     'x-timer': 'S1505743657.037542,VS0,VE1',
+180 silly get     vary: 'Accept-Encoding, Accept' } ]
+181 verbose etag https://registry.npmjs.org/colors from cache
+182 verbose get saving colors to /home/fran/.npm/registry.npmjs.org/colors/.cache.json
+183 verbose get https://registry.npmjs.org/optimist not expired, no request
+184 silly addNameRange number 2 { name: 'optimist', range: '>=0.4.0 <0.5.0', hasData: true }
+185 silly addNameRange versions [ 'optimist',
+185 silly addNameRange   [ '0.0.1',
+185 silly addNameRange     '0.0.2',
+185 silly addNameRange     '0.0.4',
+185 silly addNameRange     '0.0.5',
+185 silly addNameRange     '0.0.6',
+185 silly addNameRange     '0.0.7',
+185 silly addNameRange     '0.1.0',
+185 silly addNameRange     '0.1.1',
+185 silly addNameRange     '0.1.2',
+185 silly addNameRange     '0.1.3',
+185 silly addNameRange     '0.1.4',
+185 silly addNameRange     '0.1.5',
+185 silly addNameRange     '0.1.6',
+185 silly addNameRange     '0.1.7',
+185 silly addNameRange     '0.1.8',
+185 silly addNameRange     '0.1.9',
+185 silly addNameRange     '0.0.3',
+185 silly addNameRange     '0.2.0',
+185 silly addNameRange     '0.2.1',
+185 silly addNameRange     '0.2.2',
+185 silly addNameRange     '0.2.3',
+185 silly addNameRange     '0.2.4',
+185 silly addNameRange     '0.2.5',
+185 silly addNameRange     '0.2.6',
+185 silly addNameRange     '0.2.7',
+185 silly addNameRange     '0.2.8',
+185 silly addNameRange     '0.3.0',
+185 silly addNameRange     '0.3.1',
+185 silly addNameRange     '0.3.3',
+185 silly addNameRange     '0.3.4',
+185 silly addNameRange     '0.3.5',
+185 silly addNameRange     '0.3.6',
+185 silly addNameRange     '0.3.7',
+185 silly addNameRange     '0.4.0',
+185 silly addNameRange     '0.5.0',
+185 silly addNameRange     '0.5.1',
+185 silly addNameRange     '0.5.2',
+185 silly addNameRange     '0.6.0',
+185 silly addNameRange     '0.6.1' ] ]
+186 silly addNamed optimist@0.4.0
+187 verbose addNamed "0.4.0" is a plain semver version for optimist
+188 silly cache afterAdd optimist@0.4.0
+189 verbose afterAdd /home/fran/.npm/optimist/0.4.0/package/package.json not in flight; writing
+190 silly resolveWithNewModule colors@0.6.0-1 checking installable status
+191 silly cache add args [ 'colors@0.6.0-1', null ]
+192 verbose cache add spec colors@0.6.0-1
+193 silly cache add parsed spec Result {
+193 silly cache add   raw: 'colors@0.6.0-1',
+193 silly cache add   scope: null,
+193 silly cache add   name: 'colors',
+193 silly cache add   rawSpec: '0.6.0-1',
+193 silly cache add   spec: '0.6.0-1',
+193 silly cache add   type: 'version' }
+194 silly addNamed colors@0.6.0-1
+195 verbose addNamed "0.6.0-1" is a plain semver version for colors
+196 silly mapToRegistry name colors
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry uri https://registry.npmjs.org/colors
+200 verbose addNameVersion registry:https://registry.npmjs.org/colors not in flight; fetching
+201 verbose get https://registry.npmjs.org/colors not expired, no request
+202 verbose afterAdd /home/fran/.npm/optimist/0.4.0/package/package.json written
+203 silly cache afterAdd colors@0.6.0-1
+204 verbose afterAdd /home/fran/.npm/colors/0.6.0-1/package/package.json not in flight; writing
+205 verbose afterAdd /home/fran/.npm/colors/0.6.0-1/package/package.json written
+206 http 304 https://registry.npmjs.org/mkdirp
+207 verbose headers { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+207 verbose headers   via: '1.1 varnish',
+207 verbose headers   'cache-control': 'max-age=300',
+207 verbose headers   etag: 'W/"59be4178-670c"',
+207 verbose headers   age: '54',
+207 verbose headers   connection: 'keep-alive',
+207 verbose headers   'x-served-by': 'cache-gru17133-GRU',
+207 verbose headers   'x-cache': 'HIT',
+207 verbose headers   'x-cache-hits': '6',
+207 verbose headers   'x-timer': 'S1505743657.272555,VS0,VE0',
+207 verbose headers   vary: 'Accept-Encoding, Accept' }
+208 silly get cb [ 304,
+208 silly get   { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+208 silly get     via: '1.1 varnish',
+208 silly get     'cache-control': 'max-age=300',
+208 silly get     etag: 'W/"59be4178-670c"',
+208 silly get     age: '54',
+208 silly get     connection: 'keep-alive',
+208 silly get     'x-served-by': 'cache-gru17133-GRU',
+208 silly get     'x-cache': 'HIT',
+208 silly get     'x-cache-hits': '6',
+208 silly get     'x-timer': 'S1505743657.272555,VS0,VE0',
+208 silly get     vary: 'Accept-Encoding, Accept' } ]
+209 verbose etag https://registry.npmjs.org/mkdirp from cache
+210 verbose get saving mkdirp to /home/fran/.npm/registry.npmjs.org/mkdirp/.cache.json
+211 silly resolveWithNewModule mkdirp@0.3.5 checking installable status
+212 silly cache add args [ 'mkdirp@0.3.x', null ]
+213 verbose cache add spec mkdirp@0.3.x
+214 silly cache add parsed spec Result {
+214 silly cache add   raw: 'mkdirp@0.3.x',
+214 silly cache add   scope: null,
+214 silly cache add   name: 'mkdirp',
+214 silly cache add   rawSpec: '0.3.x',
+214 silly cache add   spec: '>=0.3.0 <0.4.0',
+214 silly cache add   type: 'range' }
+215 silly addNamed mkdirp@>=0.3.0 <0.4.0
+216 verbose addNamed ">=0.3.0 <0.4.0" is a valid semver range for mkdirp
+217 silly addNameRange { name: 'mkdirp', range: '>=0.3.0 <0.4.0', hasData: false }
+218 silly mapToRegistry name mkdirp
+219 silly mapToRegistry using default registry
+220 silly mapToRegistry registry https://registry.npmjs.org/
+221 silly mapToRegistry uri https://registry.npmjs.org/mkdirp
+222 verbose addNameRange registry:https://registry.npmjs.org/mkdirp not in flight; fetching
+223 verbose get https://registry.npmjs.org/mkdirp not expired, no request
+224 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.0 <0.4.0', hasData: true }
+225 silly addNameRange versions [ 'mkdirp',
+225 silly addNameRange   [ '0.0.1',
+225 silly addNameRange     '0.0.2',
+225 silly addNameRange     '0.0.3',
+225 silly addNameRange     '0.0.4',
+225 silly addNameRange     '0.0.5',
+225 silly addNameRange     '0.0.6',
+225 silly addNameRange     '0.0.7',
+225 silly addNameRange     '0.1.0',
+225 silly addNameRange     '0.2.0',
+225 silly addNameRange     '0.2.1',
+225 silly addNameRange     '0.2.2',
+225 silly addNameRange     '0.3.0',
+225 silly addNameRange     '0.3.1',
+225 silly addNameRange     '0.3.2',
+225 silly addNameRange     '0.3.3',
+225 silly addNameRange     '0.3.4',
+225 silly addNameRange     '0.3.5',
+225 silly addNameRange     '0.4.0',
+225 silly addNameRange     '0.4.1',
+225 silly addNameRange     '0.4.2',
+225 silly addNameRange     '0.5.0',
+225 silly addNameRange     '0.5.1' ] ]
+226 silly addNamed mkdirp@0.3.5
+227 verbose addNamed "0.3.5" is a plain semver version for mkdirp
+228 silly cache afterAdd mkdirp@0.3.5
+229 verbose afterAdd /home/fran/.npm/mkdirp/0.3.5/package/package.json not in flight; writing
+230 verbose afterAdd /home/fran/.npm/mkdirp/0.3.5/package/package.json written
+231 silly fetchNamedPackageData wordwrap
+232 silly mapToRegistry name wordwrap
+233 silly mapToRegistry using default registry
+234 silly mapToRegistry registry https://registry.npmjs.org/
+235 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+236 verbose request uri https://registry.npmjs.org/wordwrap
+237 verbose request no auth needed
+238 info attempt registry request try #1 at 11:07:37 a. m.
+239 verbose etag W/"59899067-1b0e"
+240 verbose lastModified Tue, 08 Aug 2017 10:20:23 GMT
+241 http request GET https://registry.npmjs.org/wordwrap
+242 http 304 https://registry.npmjs.org/wordwrap
+243 verbose headers { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+243 verbose headers   via: '1.1 varnish',
+243 verbose headers   'cache-control': 'max-age=300',
+243 verbose headers   etag: 'W/"59899067-1b0e"',
+243 verbose headers   age: '156',
+243 verbose headers   connection: 'keep-alive',
+243 verbose headers   'x-served-by': 'cache-gru17128-GRU',
+243 verbose headers   'x-cache': 'HIT',
+243 verbose headers   'x-cache-hits': '46',
+243 verbose headers   'x-timer': 'S1505743657.409462,VS0,VE0',
+243 verbose headers   vary: 'Accept-Encoding, Accept' }
+244 silly get cb [ 304,
+244 silly get   { date: 'Mon, 18 Sep 2017 14:07:37 GMT',
+244 silly get     via: '1.1 varnish',
+244 silly get     'cache-control': 'max-age=300',
+244 silly get     etag: 'W/"59899067-1b0e"',
+244 silly get     age: '156',
+244 silly get     connection: 'keep-alive',
+244 silly get     'x-served-by': 'cache-gru17128-GRU',
+244 silly get     'x-cache': 'HIT',
+244 silly get     'x-cache-hits': '46',
+244 silly get     'x-timer': 'S1505743657.409462,VS0,VE0',
+244 silly get     vary: 'Accept-Encoding, Accept' } ]
+245 verbose etag https://registry.npmjs.org/wordwrap from cache
+246 verbose get saving wordwrap to /home/fran/.npm/registry.npmjs.org/wordwrap/.cache.json
+247 silly resolveWithNewModule wordwrap@0.0.3 checking installable status
+248 silly cache add args [ 'wordwrap@~0.0.2', null ]
+249 verbose cache add spec wordwrap@~0.0.2
+250 silly cache add parsed spec Result {
+250 silly cache add   raw: 'wordwrap@~0.0.2',
+250 silly cache add   scope: null,
+250 silly cache add   name: 'wordwrap',
+250 silly cache add   rawSpec: '~0.0.2',
+250 silly cache add   spec: '>=0.0.2 <0.1.0',
+250 silly cache add   type: 'range' }
+251 silly addNamed wordwrap@>=0.0.2 <0.1.0
+252 verbose addNamed ">=0.0.2 <0.1.0" is a valid semver range for wordwrap
+253 silly addNameRange { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: false }
+254 silly mapToRegistry name wordwrap
+255 silly mapToRegistry using default registry
+256 silly mapToRegistry registry https://registry.npmjs.org/
+257 silly mapToRegistry uri https://registry.npmjs.org/wordwrap
+258 verbose addNameRange registry:https://registry.npmjs.org/wordwrap not in flight; fetching
+259 verbose get https://registry.npmjs.org/wordwrap not expired, no request
+260 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: true }
+261 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2', '0.0.3', '1.0.0' ] ]
+262 silly addNamed wordwrap@0.0.3
+263 verbose addNamed "0.0.3" is a plain semver version for wordwrap
+264 silly cache afterAdd wordwrap@0.0.3
+265 verbose afterAdd /home/fran/.npm/wordwrap/0.0.3/package/package.json not in flight; writing
+266 verbose afterAdd /home/fran/.npm/wordwrap/0.0.3/package/package.json written
+267 silly loadAllDepsIntoIdealTree Finishing
+268 silly idealTree:prePrune lib
+268 silly idealTree:prePrune └─┬ sass-watch@0.1.0
+268 silly idealTree:prePrune   ├── chokidar@0.6.3
+268 silly idealTree:prePrune   ├── colors@0.6.0-1
+268 silly idealTree:prePrune   ├── mkdirp@0.3.5
+268 silly idealTree:prePrune   ├── node-sass@0.5.4
+268 silly idealTree:prePrune   ├── optimist@0.4.0
+268 silly idealTree:prePrune   └── wordwrap@0.0.3
+269 silly loadIdealTree Finishing
+270 silly currentTree lib
+271 silly idealTree lib
+271 silly idealTree └─┬ sass-watch@0.1.0
+271 silly idealTree   ├── chokidar@0.6.3
+271 silly idealTree   ├── colors@0.6.0-1
+271 silly idealTree   ├── mkdirp@0.3.5
+271 silly idealTree   ├── node-sass@0.5.4
+271 silly idealTree   ├── optimist@0.4.0
+271 silly idealTree   └── wordwrap@0.0.3
+272 silly generateActionsToTake Starting
+273 silly install generateActionsToTake
+274 silly generateActionsToTake Finishing
+275 silly diffTrees action count 7
+276 silly diffTrees add chokidar@0.6.3
+277 silly diffTrees add colors@0.6.0-1
+278 silly diffTrees add mkdirp@0.3.5
+279 silly diffTrees add wordwrap@0.0.3
+280 silly diffTrees add optimist@0.4.0
+281 silly diffTrees add node-sass@0.5.4
+282 silly diffTrees add sass-watch@0.1.0
+283 silly decomposeActions action count 56
+284 silly decomposeActions fetch chokidar@0.6.3
+285 silly decomposeActions extract chokidar@0.6.3
+286 silly decomposeActions test chokidar@0.6.3
+287 silly decomposeActions preinstall chokidar@0.6.3
+288 silly decomposeActions build chokidar@0.6.3
+289 silly decomposeActions install chokidar@0.6.3
+290 silly decomposeActions postinstall chokidar@0.6.3
+291 silly decomposeActions finalize chokidar@0.6.3
+292 silly decomposeActions fetch colors@0.6.0-1
+293 silly decomposeActions extract colors@0.6.0-1
+294 silly decomposeActions test colors@0.6.0-1
+295 silly decomposeActions preinstall colors@0.6.0-1
+296 silly decomposeActions build colors@0.6.0-1
+297 silly decomposeActions install colors@0.6.0-1
+298 silly decomposeActions postinstall colors@0.6.0-1
+299 silly decomposeActions finalize colors@0.6.0-1
+300 silly decomposeActions fetch mkdirp@0.3.5
+301 silly decomposeActions extract mkdirp@0.3.5
+302 silly decomposeActions test mkdirp@0.3.5
+303 silly decomposeActions preinstall mkdirp@0.3.5
+304 silly decomposeActions build mkdirp@0.3.5
+305 silly decomposeActions install mkdirp@0.3.5
+306 silly decomposeActions postinstall mkdirp@0.3.5
+307 silly decomposeActions finalize mkdirp@0.3.5
+308 silly decomposeActions fetch wordwrap@0.0.3
+309 silly decomposeActions extract wordwrap@0.0.3
+310 silly decomposeActions test wordwrap@0.0.3
+311 silly decomposeActions preinstall wordwrap@0.0.3
+312 silly decomposeActions build wordwrap@0.0.3
+313 silly decomposeActions install wordwrap@0.0.3
+314 silly decomposeActions postinstall wordwrap@0.0.3
+315 silly decomposeActions finalize wordwrap@0.0.3
+316 silly decomposeActions fetch optimist@0.4.0
+317 silly decomposeActions extract optimist@0.4.0
+318 silly decomposeActions test optimist@0.4.0
+319 silly decomposeActions preinstall optimist@0.4.0
+320 silly decomposeActions build optimist@0.4.0
+321 silly decomposeActions install optimist@0.4.0
+322 silly decomposeActions postinstall optimist@0.4.0
+323 silly decomposeActions finalize optimist@0.4.0
+324 silly decomposeActions fetch node-sass@0.5.4
+325 silly decomposeActions extract node-sass@0.5.4
+326 silly decomposeActions test node-sass@0.5.4
+327 silly decomposeActions preinstall node-sass@0.5.4
+328 silly decomposeActions build node-sass@0.5.4
+329 silly decomposeActions install node-sass@0.5.4
+330 silly decomposeActions postinstall node-sass@0.5.4
+331 silly decomposeActions finalize node-sass@0.5.4
+332 silly decomposeActions fetch sass-watch@0.1.0
+333 silly decomposeActions extract sass-watch@0.1.0
+334 silly decomposeActions test sass-watch@0.1.0
+335 silly decomposeActions preinstall sass-watch@0.1.0
+336 silly decomposeActions build sass-watch@0.1.0
+337 silly decomposeActions install sass-watch@0.1.0
+338 silly decomposeActions postinstall sass-watch@0.1.0
+339 silly decomposeActions finalize sass-watch@0.1.0
+340 silly executeActions Starting
+341 silly install executeActions
+342 silly doSerial global-install 0
+343 silly doParallel fetch 7
+344 verbose makeDirectory /home/fran/.npm/_locks creation not in flight; initializing
+345 silly makeDirectory /home/fran/.npm/_locks uid: 1000 gid: 1000
+346 verbose lock using /home/fran/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+347 silly doParallel extract 7
+348 silly extract chokidar@0.6.3
+349 silly extract colors@0.6.0-1
+350 silly extract mkdirp@0.3.5
+351 silly extract wordwrap@0.0.3
+352 silly extract optimist@0.4.0
+353 silly extract node-sass@0.5.4
+354 silly extract sass-watch@0.1.0
+355 verbose unbuild lib/node_modules/.staging/chokidar-059535db
+356 verbose unbuild lib/node_modules/.staging/colors-97e26100
+357 verbose unbuild lib/node_modules/.staging/mkdirp-fc1341c5
+358 verbose unbuild lib/node_modules/.staging/wordwrap-47c2987f
+359 verbose unbuild lib/node_modules/.staging/optimist-4f7080bf
+360 verbose unbuild lib/node_modules/.staging/node-sass-000634aa
+361 verbose unbuild lib/node_modules/.staging/sass-watch-b2a37634
+362 silly gentlyRm /usr/local/lib/node_modules/.staging/chokidar-059535db is being purged from base /usr/local
+363 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/chokidar-059535db
+364 silly gentlyRm /usr/local/lib/node_modules/.staging/colors-97e26100 is being purged from base /usr/local
+365 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/colors-97e26100
+366 silly gentlyRm /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5 is being purged from base /usr/local
+367 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5
+368 silly gentlyRm /usr/local/lib/node_modules/.staging/wordwrap-47c2987f is being purged from base /usr/local
+369 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/wordwrap-47c2987f
+370 silly gentlyRm /usr/local/lib/node_modules/.staging/optimist-4f7080bf is being purged from base /usr/local
+371 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/optimist-4f7080bf
+372 verbose tar unpack /home/fran/.npm/chokidar/0.6.3/package.tgz
+373 verbose tar unpacking to /usr/local/lib/node_modules/.staging/chokidar-059535db
+374 silly gentlyRm /usr/local/lib/node_modules/.staging/chokidar-059535db is being purged
+375 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/chokidar-059535db
+376 verbose tar unpack /home/fran/.npm/colors/0.6.0-1/package.tgz
+377 verbose tar unpacking to /usr/local/lib/node_modules/.staging/colors-97e26100
+378 silly gentlyRm /usr/local/lib/node_modules/.staging/colors-97e26100 is being purged
+379 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/colors-97e26100
+380 verbose tar unpack /home/fran/.npm/mkdirp/0.3.5/package.tgz
+381 verbose tar unpacking to /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5
+382 silly gentlyRm /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5 is being purged
+383 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5
+384 verbose tar unpack /home/fran/.npm/wordwrap/0.0.3/package.tgz
+385 verbose tar unpacking to /usr/local/lib/node_modules/.staging/wordwrap-47c2987f
+386 silly gentlyRm /usr/local/lib/node_modules/.staging/wordwrap-47c2987f is being purged
+387 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/wordwrap-47c2987f
+388 verbose tar unpack /home/fran/.npm/optimist/0.4.0/package.tgz
+389 verbose tar unpacking to /usr/local/lib/node_modules/.staging/optimist-4f7080bf
+390 silly gentlyRm /usr/local/lib/node_modules/.staging/optimist-4f7080bf is being purged
+391 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/optimist-4f7080bf
+392 silly gentlyRm /usr/local/lib/node_modules/.staging/node-sass-000634aa is being purged from base /usr/local
+393 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-sass-000634aa
+394 silly gentlyRm /usr/local/lib/node_modules/.staging/sass-watch-b2a37634 is being purged from base /usr/local
+395 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/sass-watch-b2a37634
+396 silly gunzTarPerm modes [ '755', '644' ]
+397 silly gunzTarPerm modes [ '755', '644' ]
+398 silly gunzTarPerm modes [ '755', '644' ]
+399 silly gunzTarPerm modes [ '755', '644' ]
+400 silly gunzTarPerm modes [ '755', '644' ]
+401 verbose tar unpack /home/fran/.npm/node-sass/0.5.4/package.tgz
+402 verbose tar unpacking to /usr/local/lib/node_modules/.staging/node-sass-000634aa
+403 silly gentlyRm /usr/local/lib/node_modules/.staging/node-sass-000634aa is being purged
+404 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-sass-000634aa
+405 verbose tar unpack /home/fran/.npm/sass-watch/0.1.0/package.tgz
+406 verbose tar unpacking to /usr/local/lib/node_modules/.staging/sass-watch-b2a37634
+407 silly gentlyRm /usr/local/lib/node_modules/.staging/sass-watch-b2a37634 is being purged
+408 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/sass-watch-b2a37634
+409 silly gunzTarPerm modes [ '755', '644' ]
+410 silly gunzTarPerm modes [ '755', '644' ]
+411 silly gunzTarPerm extractEntry package.json
+412 silly gunzTarPerm extractEntry colors.js
+413 silly gunzTarPerm extractEntry package.json
+414 silly gunzTarPerm extractEntry package.json
+415 silly gunzTarPerm extractEntry package.json
+416 silly gunzTarPerm extractEntry package.json
+417 silly gunzTarPerm extractEntry package.json
+418 silly gunzTarPerm extractEntry .npmignore
+419 silly gunzTarPerm extractEntry README.md
+420 silly gunzTarPerm extractEntry example.html
+421 silly gunzTarPerm extractEntry example.js
+422 silly gunzTarPerm extractEntry .npmignore
+423 silly gunzTarPerm extractEntry LICENSE
+424 silly gunzTarPerm extractEntry LICENSE
+425 silly gunzTarPerm extractEntry index.js
+426 silly gunzTarPerm extractEntry LICENSE
+427 silly gunzTarPerm extractEntry index.js
+428 silly gunzTarPerm extractEntry .npmignore
+429 silly gunzTarPerm extractEntry README.md
+430 silly gunzTarPerm extractEntry .npmignore
+431 silly gunzTarPerm extractEntry LICENSE
+432 silly gunzTarPerm extractEntry setup.js
+433 silly gunzTarPerm extractEntry CHANGELOG.md
+434 silly gunzTarPerm extractEntry index.js
+435 silly gunzTarPerm extractEntry examples/pow.js
+436 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+437 silly gunzTarPerm extractEntry package.json
+438 silly gunzTarPerm extractEntry ReadMe.md
+439 silly gunzTarPerm extractEntry test.js
+440 silly gunzTarPerm extractEntry README.markdown
+441 silly gunzTarPerm extractEntry example/center.js
+442 silly gunzTarPerm extractEntry example/line_count_options.js
+443 silly gunzTarPerm extractEntry app.js
+444 silly gunzTarPerm extractEntry Readme.md
+445 silly gunzTarPerm extractEntry LICENSE
+446 silly gunzTarPerm extractEntry sass.js
+447 silly gunzTarPerm extractEntry readme.markdown
+448 silly gunzTarPerm extractEntry test/perm.js
+449 silly gunzTarPerm extractEntry lib/index.js
+450 silly gunzTarPerm extractEntry lib/is-binary.js
+451 silly gunzTarPerm extractEntry src/index.coffee
+452 silly gunzTarPerm extractEntry src/is-binary.coffee
+453 silly gunzTarPerm extractEntry test/common.js
+454 silly gunzTarPerm extractEntry test/chokidar-test.coffee
+455 silly gunzTarPerm extractEntry test/fixtures/binary.mp3
+456 silly gunzTarPerm extractEntry test/fixtures/change.txt
+457 silly gunzTarPerm extractEntry test/fixtures/unlink.txt
+458 silly gunzTarPerm extractEntry example/meat.js
+459 silly gunzTarPerm extractEntry test/break.js
+460 silly gunzTarPerm extractEntry example/boolean_double.js
+461 silly gunzTarPerm extractEntry example/divide.js
+462 silly gunzTarPerm extractEntry rebuild.js
+463 silly gunzTarPerm extractEntry test.js
+464 silly gunzTarPerm extractEntry test/perm_sync.js
+465 silly gunzTarPerm extractEntry test/race.js
+466 silly gunzTarPerm extractEntry example/nonopt.js
+467 silly gunzTarPerm extractEntry example/string.js
+468 silly gunzTarPerm extractEntry test/wrap.js
+469 silly gunzTarPerm extractEntry test/idleness.txt
+470 silly gunzTarPerm extractEntry bin/node-sass
+471 silly gunzTarPerm extractEntry test/rel.js
+472 silly gunzTarPerm extractEntry examples/middleware.js
+473 silly gunzTarPerm extractEntry examples/public/.npmignore
+474 silly gunzTarPerm extractEntry example/default_hash.js
+475 silly gunzTarPerm extractEntry example/reflect.js
+476 silly gunzTarPerm extractEntry test/return.js
+477 silly gunzTarPerm extractEntry test/clobber.js
+478 silly gunzTarPerm extractEntry examples/test.scss
+479 silly gunzTarPerm extractEntry CONTRIBUTING.md
+480 silly gunzTarPerm extractEntry example/default_singles.js
+481 silly gunzTarPerm extractEntry example/usage-options.js
+482 silly gunzTarPerm extractEntry test/root.js
+483 silly gunzTarPerm extractEntry test/umask.js
+484 silly gunzTarPerm extractEntry binding.gyp
+485 silly gunzTarPerm extractEntry precompiled/darwin-x64/binding.node
+486 silly gunzTarPerm extractEntry example/bool.js
+487 silly gunzTarPerm extractEntry example/short.js
+488 silly gentlyRm /usr/local/lib/node_modules/.staging/sass-watch-b2a37634/node_modules is being purged
+489 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/sass-watch-b2a37634/node_modules
+490 silly gunzTarPerm extractEntry example/xup.js
+491 silly gunzTarPerm extractEntry example/boolean_single.js
+492 silly gunzTarPerm extractEntry test/sync.js
+493 silly gunzTarPerm extractEntry test/chmod.js
+494 silly gunzTarPerm extractEntry example/line_count_wrap.js
+495 silly gunzTarPerm extractEntry example/line_count.js
+496 silly gunzTarPerm extractEntry test/umask_sync.js
+497 silly gunzTarPerm extractEntry test/return_sync.js
+498 silly gentlyRm /usr/local/lib/node_modules/.staging/colors-97e26100/node_modules is being purged
+499 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/colors-97e26100/node_modules
+500 silly gunzTarPerm extractEntry readme.markdown
+501 silly gunzTarPerm extractEntry test/short.js
+502 silly gunzTarPerm extractEntry test/mkdirp.js
+503 silly gunzTarPerm extractEntry .travis.yml
+504 silly gunzTarPerm extractEntry precompiled/linux-arm/binding.node
+505 silly gunzTarPerm extractEntry test/parse.js
+506 silly gunzTarPerm extractEntry test/_.js
+507 silly gunzTarPerm extractEntry test/usage.js
+508 silly gunzTarPerm extractEntry test/_/bin.js
+509 silly gentlyRm /usr/local/lib/node_modules/.staging/wordwrap-47c2987f/node_modules is being purged
+510 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/wordwrap-47c2987f/node_modules
+511 silly gunzTarPerm extractEntry test/_/argv.js
+512 silly gunzTarPerm extractEntry .travis.yml
+513 silly gunzTarPerm extractEntry precompiled/linux-ia32/binding.node
+514 silly gentlyRm /usr/local/lib/node_modules/.staging/chokidar-059535db/node_modules is being purged
+515 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/chokidar-059535db/node_modules
+516 silly gentlyRm /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5/node_modules is being purged
+517 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5/node_modules
+518 silly gunzTarPerm extractEntry precompiled/linux-x64/binding.node
+519 silly gentlyRm /usr/local/lib/node_modules/.staging/optimist-4f7080bf/node_modules is being purged
+520 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/optimist-4f7080bf/node_modules
+521 silly gunzTarPerm extractEntry precompiled/sunos-x64/binding.node
+522 silly gunzTarPerm extractEntry precompiled/win32-ia32/binding.node
+523 silly gunzTarPerm extractEntry precompiled/win32-x64/binding.node
+524 silly gunzTarPerm extractEntry binding.cpp
+525 silly gunzTarPerm extractEntry lib/middleware.js
+526 silly gunzTarPerm extractEntry .travis.yml
+527 silly gunzTarPerm extractEntry sass_context_wrapper.cpp
+528 silly gunzTarPerm extractEntry sass_context_wrapper.h
+529 silly gunzTarPerm extractEntry test/cli.js
+530 silly gunzTarPerm extractEntry test/mem_test_render.js
+531 silly gunzTarPerm extractEntry test/mem_test_renderSync.js
+532 silly gunzTarPerm extractEntry test/source_comments_spec.js
+533 silly gunzTarPerm extractEntry test/test.js
+534 silly gunzTarPerm extractEntry test/large_test.scss
+535 silly gunzTarPerm extractEntry test/sample.scss
+536 silly gunzTarPerm extractEntry .gitmodules
+537 silly gentlyRm /usr/local/lib/node_modules/.staging/node-sass-000634aa/node_modules is being purged
+538 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-sass-000634aa/node_modules
+539 silly doParallel preinstall 7
+540 silly preinstall chokidar@0.6.3 /usr/local/lib/node_modules/.staging/chokidar-059535db
+541 info lifecycle chokidar@0.6.3~preinstall: chokidar@0.6.3
+542 silly preinstall colors@0.6.0-1 /usr/local/lib/node_modules/.staging/colors-97e26100
+543 info lifecycle colors@0.6.0-1~preinstall: colors@0.6.0-1
+544 silly preinstall mkdirp@0.3.5 /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5
+545 info lifecycle mkdirp@0.3.5~preinstall: mkdirp@0.3.5
+546 silly preinstall wordwrap@0.0.3 /usr/local/lib/node_modules/.staging/wordwrap-47c2987f
+547 info lifecycle wordwrap@0.0.3~preinstall: wordwrap@0.0.3
+548 silly preinstall optimist@0.4.0 /usr/local/lib/node_modules/.staging/optimist-4f7080bf
+549 info lifecycle optimist@0.4.0~preinstall: optimist@0.4.0
+550 silly preinstall node-sass@0.5.4 /usr/local/lib/node_modules/.staging/node-sass-000634aa
+551 info lifecycle node-sass@0.5.4~preinstall: node-sass@0.5.4
+552 silly preinstall sass-watch@0.1.0 /usr/local/lib/node_modules/.staging/sass-watch-b2a37634
+553 info lifecycle sass-watch@0.1.0~preinstall: sass-watch@0.1.0
+554 silly lifecycle chokidar@0.6.3~preinstall: no script for preinstall, continuing
+555 silly lifecycle colors@0.6.0-1~preinstall: no script for preinstall, continuing
+556 silly lifecycle mkdirp@0.3.5~preinstall: no script for preinstall, continuing
+557 silly lifecycle wordwrap@0.0.3~preinstall: no script for preinstall, continuing
+558 silly lifecycle optimist@0.4.0~preinstall: no script for preinstall, continuing
+559 silly lifecycle node-sass@0.5.4~preinstall: no script for preinstall, continuing
+560 silly lifecycle sass-watch@0.1.0~preinstall: no script for preinstall, continuing
+561 silly doReverseSerial remove 0
+562 silly doSerial move 0
+563 silly doSerial finalize 7
+564 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/chokidar
+565 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/colors
+566 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/mkdirp
+567 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/wordwrap
+568 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/optimist
+569 silly finalize /usr/local/lib/node_modules/sass-watch/node_modules/node-sass
+570 silly finalize /usr/local/lib/node_modules/sass-watch
+571 silly doSerial build 7
+572 silly build chokidar@0.6.3
+573 info linkStuff chokidar@0.6.3
+574 silly linkStuff chokidar@0.6.3 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+575 silly linkStuff chokidar@0.6.3 is part of a global install
+576 silly linkStuff chokidar@0.6.3 is installed into a global node_modules
+577 verbose linkBins chokidar@0.6.3
+578 verbose linkMans chokidar@0.6.3
+579 silly build colors@0.6.0-1
+580 info linkStuff colors@0.6.0-1
+581 silly linkStuff colors@0.6.0-1 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+582 silly linkStuff colors@0.6.0-1 is part of a global install
+583 silly linkStuff colors@0.6.0-1 is installed into a global node_modules
+584 verbose linkBins colors@0.6.0-1
+585 verbose linkMans colors@0.6.0-1
+586 silly build mkdirp@0.3.5
+587 info linkStuff mkdirp@0.3.5
+588 silly linkStuff mkdirp@0.3.5 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+589 silly linkStuff mkdirp@0.3.5 is part of a global install
+590 silly linkStuff mkdirp@0.3.5 is installed into a global node_modules
+591 verbose linkBins mkdirp@0.3.5
+592 verbose linkMans mkdirp@0.3.5
+593 silly build wordwrap@0.0.3
+594 info linkStuff wordwrap@0.0.3
+595 silly linkStuff wordwrap@0.0.3 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+596 silly linkStuff wordwrap@0.0.3 is part of a global install
+597 silly linkStuff wordwrap@0.0.3 is installed into a global node_modules
+598 verbose linkBins wordwrap@0.0.3
+599 verbose linkMans wordwrap@0.0.3
+600 silly build optimist@0.4.0
+601 info linkStuff optimist@0.4.0
+602 silly linkStuff optimist@0.4.0 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+603 silly linkStuff optimist@0.4.0 is part of a global install
+604 silly linkStuff optimist@0.4.0 is installed into a global node_modules
+605 verbose linkBins optimist@0.4.0
+606 verbose linkMans optimist@0.4.0
+607 silly build node-sass@0.5.4
+608 info linkStuff node-sass@0.5.4
+609 silly linkStuff node-sass@0.5.4 has /usr/local/lib/node_modules/sass-watch/node_modules as its parent node_modules
+610 silly linkStuff node-sass@0.5.4 is part of a global install
+611 silly linkStuff node-sass@0.5.4 is installed into a global node_modules
+612 verbose linkBins node-sass@0.5.4
+613 verbose link bins [ { 'node-sass': 'bin/node-sass' },
+613 verbose link bins   '/usr/local/lib/node_modules/sass-watch/node_modules/.bin',
+613 verbose link bins   false ]
+614 verbose linkMans node-sass@0.5.4
+615 silly gentlyRm /usr/local/lib/node_modules/sass-watch/node_modules/.bin/node-sass is being purged
+616 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/sass-watch/node_modules/.bin/node-sass
+617 silly build sass-watch@0.1.0
+618 info linkStuff sass-watch@0.1.0
+619 silly linkStuff sass-watch@0.1.0 has /usr/local/lib/node_modules as its parent node_modules
+620 silly linkStuff sass-watch@0.1.0 is part of a global install
+621 silly linkStuff sass-watch@0.1.0 is installed into a global node_modules
+622 silly linkStuff sass-watch@0.1.0 is installed into the top-level global node_modules
+623 verbose linkBins sass-watch@0.1.0
+624 verbose link bins [ { 'sass-watch': './app.js' }, '/usr/local/bin', true ]
+625 verbose linkMans sass-watch@0.1.0
+626 silly gentlyRm /usr/local/bin/sass-watch is being gently removed
+627 silly doSerial global-link 0
+628 silly doParallel update-linked 0
+629 silly doSerial install 7
+630 silly install chokidar@0.6.3 /usr/local/lib/node_modules/.staging/chokidar-059535db
+631 info lifecycle chokidar@0.6.3~install: chokidar@0.6.3
+632 silly lifecycle chokidar@0.6.3~install: no script for install, continuing
+633 silly install colors@0.6.0-1 /usr/local/lib/node_modules/.staging/colors-97e26100
+634 info lifecycle colors@0.6.0-1~install: colors@0.6.0-1
+635 silly lifecycle colors@0.6.0-1~install: no script for install, continuing
+636 silly install mkdirp@0.3.5 /usr/local/lib/node_modules/.staging/mkdirp-fc1341c5
+637 info lifecycle mkdirp@0.3.5~install: mkdirp@0.3.5
+638 silly lifecycle mkdirp@0.3.5~install: no script for install, continuing
+639 silly install wordwrap@0.0.3 /usr/local/lib/node_modules/.staging/wordwrap-47c2987f
+640 info lifecycle wordwrap@0.0.3~install: wordwrap@0.0.3
+641 silly lifecycle wordwrap@0.0.3~install: no script for install, continuing
+642 silly install optimist@0.4.0 /usr/local/lib/node_modules/.staging/optimist-4f7080bf
+643 info lifecycle optimist@0.4.0~install: optimist@0.4.0
+644 silly lifecycle optimist@0.4.0~install: no script for install, continuing
+645 silly install node-sass@0.5.4 /usr/local/lib/node_modules/.staging/node-sass-000634aa
+646 info lifecycle node-sass@0.5.4~install: node-sass@0.5.4
+647 verbose lifecycle node-sass@0.5.4~install: unsafe-perm in lifecycle false
+648 verbose lifecycle node-sass@0.5.4~install: PATH: /usr/share/npm/bin/node-gyp-bin:/usr/local/lib/node_modules/sass-watch/node_modules/node-sass/node_modules/.bin:/usr/local/lib/node_modules/sass-watch/node_modules/.bin:/usr/local/lib/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+649 verbose lifecycle node-sass@0.5.4~install: CWD: /usr/local/lib/node_modules/sass-watch/node_modules/node-sass
+650 silly lifecycle node-sass@0.5.4~install: Args: [ '-c', 'node rebuild.js' ]
+651 info lifecycle node-sass@0.5.4~install: Failed to exec install script
+652 verbose unlock done using /home/fran/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
+653 silly rollbackFailedOptional Starting
+654 silly rollbackFailedOptional Finishing
+655 silly runTopLevelLifecycles Starting
+656 silly runTopLevelLifecycles Finishing
+657 silly install printInstalled
+658 verbose stack Error: node-sass@0.5.4 install: `node rebuild.js`
+658 verbose stack spawn ENOENT
+658 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:17:16)
+658 verbose stack     at emitTwo (events.js:87:13)
+658 verbose stack     at ChildProcess.emit (events.js:172:7)
+658 verbose stack     at maybeClose (internal/child_process.js:821:16)
+658 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+659 verbose pkgid node-sass@0.5.4
+660 verbose cwd /home/fran/Documentos/Squid-Django
+661 error Linux 4.10.0-33-generic
+662 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "sass-watch"
+663 error node v4.2.6
+664 error npm  v3.5.2
+665 error file sh
+666 error code ELIFECYCLE
+667 error errno ENOENT
+668 error syscall spawn
+669 error node-sass@0.5.4 install: `node rebuild.js`
+669 error spawn ENOENT
+670 error Failed at the node-sass@0.5.4 install script 'node rebuild.js'.
+670 error Make sure you have the latest version of node.js and npm installed.
+670 error If you do, this is most likely a problem with the node-sass package,
+670 error not with npm itself.
+670 error Tell the author that this fails on your system:
+670 error     node rebuild.js
+670 error You can get information on how to open an issue for this project with:
+670 error     npm bugs node-sass
+670 error Or if that isn't available, you can get their info via:
+670 error     npm owner ls node-sass
+670 error There is likely additional logging output above.
+671 verbose exit [ 1, true ]
