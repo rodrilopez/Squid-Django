@@ -1,0 +1,64 @@
+html,
+body {
+    height: 100%;
+    background-color: #F1F4F6;
+}
+
+a::-moz-focus-inner,
+a:focus {
+    border: 0;
+    outline: 0;
+}
+
+.side-nav {
+    padding-top: 20px;
+    transform: translateX(0%) !important;
+}
+
+.side-nav a {
+    padding: 3% 0 3% 0;
+    font-size: 1.2rem !important;
+}
+
+.side-nav span {
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 8%;
+}
+
+.side-nav i {
+    margin-left: 4%;
+    vertical-align: text-bottom;
+    color: #009d50;
+}
+
+.nomargin {
+    margin-bottom: 0px !important;
+}
+
+.v-align {
+    transition: .4s;
+    padding-top: calc(55vh - 170px);
+    height: 100vh;
+}
+
+.v-align a {
+    margin: 2% 0 2% 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .cont-cards {
+        padding-left: 26%;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+    .cont-cards {
+        padding-left: 38%;
+    }
+}
+
+input[type="text"]:focus:not(.browser-default):not([readonly]){
+    box-shadow: rgb(0,157,80) 0px 1px 0px 0px !important;
+}
