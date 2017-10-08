@@ -4,6 +4,10 @@ body {
     background-color: #F1F4F6;
 }
 
+.title{
+    font-weight: 600;
+}
+
 a::-moz-focus-inner,
 a:focus {
     border: 0;
@@ -24,7 +28,6 @@ a:focus {
     color: #FFF;
     text-transform: uppercase;
     font-weight: 600;
-    margin-left: 8%;
 }
 
 .side-nav i {
