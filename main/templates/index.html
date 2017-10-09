@@ -27,7 +27,7 @@
             </div>
 
             <!-- FORMS -->
-            
+
             <!-- Categoria -->
             <div class="row" id="category-form">
                 <form method="post" class="col s12" enctype="multipart/form-data">
@@ -72,9 +72,31 @@
             <!-- Permiso -->
             <div class="row" id="permiso-form">
                 <form method="post" class="col s12" enctype="multipart/form-data">
-                    {% csrf_token %} {{ form_permission.as_p }}
-
-                    <button type="submit" class="btnSave">Guardar</button>
+                    {% csrf_token %}
+                    <div class="input-field col s12">
+                        {% render_field form_permission.name type="permission_name" id="name" %}
+                        <label for="permission_name">Nombre</label>
+                    </div>
+                    <div class="input-field col s12">
+                        {% render_field form_permission.description type="permission_description" id="name" %}
+                        <label for="permission_description">Descripcion</label>
+                    </div>
+                    <div class="switch center">
+                        <label class="white-text">
+                        Off
+                        {% render_field form_permission.is_white_list  type="checkbox" %}
+                        <span class="lever white-text"></span>
+                        On
+                        </label>
+                    </div><br>
+                    <div class="input-field col s12">
+                    {% render_field form_permission.permission class+="materialize-textarea" id="textarea2" %}
+                    <label for="textarea2">Textarea</label>
+                    </div>
+                                        
+                    <div class="col s12 center">
+                        <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
+                    </div>
 
                 </form>
             </div>
@@ -164,6 +186,32 @@
         var ani_completed = false;
 
         $(document).ready(function() {
+            $('.chips').material_chip();
+            $('.chips-initial').material_chip({
+                data: [{
+                    tag: 'Apple',
+                }, {
+                    tag: 'Microsoft',
+                }, {
+                    tag: 'Google',
+                }],
+            });
+            $('.chips-placeholder').material_chip({
+                placeholder: 'Enter a tag',
+                secondaryPlaceholder: '+Tag',
+            });
+            $('.chips-autocomplete').material_chip({
+                autocompleteOptions: {
+                    data: {
+                        'Apple': null,
+                        'Microsoft': null,
+                        'Google': null
+                    },
+                    limit: Infinity,
+                    minLength: 1
+                }
+            });
+
             $("#category-form").hide();
             $("#persona-form").hide();
             $("#permiso-form").hide();

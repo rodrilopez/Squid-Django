@@ -12,7 +12,7 @@ class Permission(models.Model):
     name = models.CharField(max_length=32)
     description = models.CharField(max_length=64)
     is_white_list = models.BooleanField()
-    persmission = models.TextField()
+    permission = models.TextField()
 
 
 class Category(models.Model):
@@ -35,7 +35,7 @@ class Person(models.Model):
 
 
 class PermissionGroup(models.Model):
-    persmission = models.ForeignKey(Permission)
+    permission = models.ForeignKey(Permission)
     content_type = models.ForeignKey(ContentType)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
