@@ -29,18 +29,14 @@
 
             <!-- FORMS -->
             <div class="row" id="category-form">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Categoria</label>
-                        </div>
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Last Name</label>
-                        </div>
-                    </div>
-                </form>
+              <form method="post" class="col s12" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form_category.as_p }}
+
+                <button type="submit" class="btnSave">Guardar</button>
+
+              </form>
+
             </div>
 
             <div class="row" id="persona-form">
@@ -59,18 +55,13 @@
             </div>
 
             <div class="row" id="permiso-form">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Permiso</label>
-                        </div>
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Last Name</label>
-                        </div>
-                    </div>
-                </form>
+              <form method="post" class="col s12" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form_permission.as_p }}
+
+                <button type="submit" class="btnSave">Guardar</button>
+
+              </form>
             </div>
 
             <div class="row" id="aula-form">
