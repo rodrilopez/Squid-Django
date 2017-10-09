@@ -18,7 +18,7 @@ class Permission(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=32)
     description = models.CharField(max_length=64)
-    persmission = models.TextField()
+    permission = models.TextField()
 
 
 class Group(models.Model):

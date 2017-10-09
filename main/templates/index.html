@@ -27,18 +27,33 @@
             </div>
 
             <!-- FORMS -->
+            
+            <!-- Categoria -->
             <div class="row" id="category-form">
-              <form method="post" class="col s12" enctype="multipart/form-data">
-                {% csrf_token %}
+                <form method="post" class="col s12" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="input-field col s12">
+                        {% render_field form_category.name type="search" id="name" %}
+                        <label for="name">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        {% render_field form_category.name type="search" id="description" %}
+                        <label for="description">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        {% render_field form_category.permission class+="materialize-textarea" data-length="200" %}
+                        <label for="textarea1">Textarea</label>
+                    </div>
 
-                {% render_field form_category.name type="search" %}
-
-                <button type="submit" class="btnSave">Guardar</button>
-
-              </form>
+                    <div class="col s12 center">
+                        <br>
+                        <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
+                    </div>
+                </form>
 
             </div>
 
+            <!-- Persona -->
             <div class="row" id="persona-form">
                 <form class="col s12">
                     <div class="row">
@@ -54,16 +69,17 @@
                 </form>
             </div>
 
+            <!-- Permiso -->
             <div class="row" id="permiso-form">
-              <form method="post" class="col s12" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form_permission.as_p }}
+                <form method="post" class="col s12" enctype="multipart/form-data">
+                    {% csrf_token %} {{ form_permission.as_p }}
 
-                <button type="submit" class="btnSave">Guardar</button>
+                    <button type="submit" class="btnSave">Guardar</button>
 
-              </form>
+                </form>
             </div>
 
+            <!-- Aula -->
             <div class="row" id="aula-form">
                 <form class="col s12">
                     <div class="row">
