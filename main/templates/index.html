@@ -27,18 +27,18 @@
             </div>
 
             <!-- FORMS -->
-            
+
             <!-- Categoria -->
             <div class="row" id="category-form">
                 <form method="post" class="col s12" enctype="multipart/form-data">
                     {% csrf_token %}
                     <div class="input-field col s12">
                         {% render_field form_category.name type="search" id="name" %}
-                        <label for="name">Last Name</label>
+                        <label for="name">Name</label>
                     </div>
                     <div class="input-field col s12">
-                        {% render_field form_category.name type="search" id="description" %}
-                        <label for="description">Last Name</label>
+                        {% render_field form_category.description type="search" id="description" %}
+                        <label for="description">Description</label>
                     </div>
                     <div class="input-field col s12">
                         {% render_field form_category.permission class+="materialize-textarea" data-length="200" %}
