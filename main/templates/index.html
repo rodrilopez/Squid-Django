@@ -1,5 +1,4 @@
-{% load static %} {% load staticfiles %}
-
+{% load static %} {% load staticfiles %}{% load widget_tweaks %}
 <html>
 
 <head>
@@ -31,7 +30,8 @@
             <div class="row" id="category-form">
               <form method="post" class="col s12" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form_category.as_p }}
+
+                {% render_field form_category.name type="search" %}
 
                 <button type="submit" class="btnSave">Guardar</button>
 

@@ -6,7 +6,7 @@ from django.template import loader
 from .forms import PermissionForm, CategoryForm
 # Create your views here.
 
-def principal(request):
+def home(request):
     form_permission = PermissionForm()
     form_category = CategoryForm()
     return render(request, 'index.html', {'form_permission':form_permission,
