@@ -2,277 +2,302 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Global -->
-    <title>Interné</title>
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
+  <!-- Global -->
+  <title>Interné</title>
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
 </head>
 
 <body class="grey lighten-4">
-    <div class="row">
-        <ul id="slide-out" class="col m4 l3 side-nav fixed green accent-3 z-depth-2 hide-on-small-only tr">
-            <div class="center"><a class="white-text title">CENTRO DE GESTION</a></div>
-            <div class="divider green darken-1"></div>
-            <div class="v-align">
-                <li><a id="btn-ca" href="#!"><i class="material-icons">add</i><span>Categoria</span></a></li>
-                <li><a id="btn-pa" href="#!"><i class="material-icons">add</i><span>Persona</span></a></li>
-                <li><a id="btn-po" href="#!"><i class="material-icons">add</i><span>Permiso</span></a></li>
-                <li><a id="btn-au" href="#!"><i class="material-icons">add</i><span>Aula</span></a></li>
+  <div class="row">
+    <ul id="slide-out" class="col m4 l3 side-nav fixed green accent-3 z-depth-2 hide-on-small-only tr">
+      <div class="center"><a class="white-text title">CENTRO DE GESTION</a></div>
+      <div class="divider green darken-1"></div>
+      <div class="v-align">
+        <li><a id="btn-ca" href="#!"><i class="material-icons">add</i><span>Categoria</span></a></li>
+        <li><a id="btn-pa" href="#!"><i class="material-icons">add</i><span>Persona</span></a></li>
+        <li><a id="btn-po" href="#!"><i class="material-icons">add</i><span>Permiso</span></a></li>
+        <li><a id="btn-au" href="#!"><i class="material-icons">add</i><span>Aula</span></a></li>
+      </div>
+
+      <!-- FORMS -->
+
+      <!-- Categoria -->
+      <div class="row" id="category-form">
+        <form method="post" class="col s12" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="input-field col s12">
+            {% render_field form_category.name type="search" id="name" %}
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s12">
+            {% render_field form_category.description type="search" id="description" %}
+            <label for="description">Description</label>
+          </div>
+          <div class="input-field col s12">
+            {% render_field form_category.permission class+="materialize-textarea" data-length="200" %}
+            <label for="textarea1">Textarea</label>
+          </div>
+
+          <div class="col s12 center">
+            <br>
+            <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- Persona -->
+      <div class="row" id="persona-form">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 box">
+              <input id="person_name" type="text" class="white-text" name="person_name">
+              <label for="person_name">Nombre</label>
             </div>
-
-            <!-- FORMS -->
-
-            <!-- Categoria -->
-            <div class="row" id="category-form">
-                <form method="post" class="col s12" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div class="input-field col s12">
-                        {% render_field form_category.name type="search" id="name" %}
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="input-field col s12">
-                        {% render_field form_category.description type="search" id="description" %}
-                        <label for="description">Description</label>
-                    </div>
-                    <div class="input-field col s12">
-                        {% render_field form_category.permission class+="materialize-textarea" data-length="200" %}
-                        <label for="textarea1">Textarea</label>
-                    </div>
-
-                    <div class="col s12 center">
-                        <br>
-                        <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
-                    </div>
-                </form>
-
+            <div class="input-field col s12 box">
+              <input id="person_description" type="text" class="white-text" name="person_description">
+              <label for="person_description">Descripción</label>
             </div>
-
-            <!-- Persona -->
-            <div class="row" id="persona-form">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Persona</label>
-                        </div>
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Last Name</label>
-                        </div>
-                    </div>
-                </form>
+            <div class="input-field col s12 box">
+              <input id="person_ip" type="text" class="white-text" name="person_ip">
+              <label for="person_ip">IP</label>
             </div>
+            <div class="input-field col s12">
+              <select multiple>
+                  <option value="" disabled selected class="white-text">Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              <label>Categorias</label>
+            </div>
+            <div class="input-field col s12">
+              <select multiple>
+                  <option value="" disabled selected class="white-text">Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              <label>Permisos</label>
+            </div>
+            <div class="col s12 center">
+              <br>
+              <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
-            <!-- Permiso -->
-            <div class="row" id="permiso-form">
-                <form method="post" class="col s12" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div class="input-field col s12">
-                        {% render_field form_permission.name type="permission_name" id="name" %}
-                        <label for="permission_name">Nombre</label>
-                    </div>
-                    <div class="input-field col s12">
-                        {% render_field form_permission.description type="permission_description" id="name" %}
-                        <label for="permission_description">Descripcion</label>
-                    </div>
-                    <div class="switch center">
-                        <label class="white-text">
+      <!-- Permiso -->
+      <div class="row" id="permiso-form">
+        <form method="post" class="col s12" enctype="multipart/form-data">
+          {% csrf_token %}
+          <div class="input-field col s12">
+            {% render_field form_permission.name type="permission_name" id="name" %}
+            <label for="permission_name">Nombre</label>
+          </div>
+          <div class="input-field col s12">
+            {% render_field form_permission.description type="permission_description" id="name" %}
+            <label for="permission_description">Descripcion</label>
+          </div>
+          <div class="switch center">
+            <label class="white-text">
                         Off
                         {% render_field form_permission.is_white_list  type="checkbox" %}
                         <span class="lever white-text"></span>
                         On
                         </label>
-                    </div><br>
-                    <div class="input-field col s12">
-                    {% render_field form_permission.permission class+="materialize-textarea" id="textarea2" %}
-                    <label for="textarea2">Textarea</label>
-                    </div>
-                                        
-                    <div class="col s12 center">
-                        <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
-                    </div>
+          </div><br>
+          <div class="input-field col s12">
+            {% render_field form_permission.permission class+="materialize-textarea" id="textarea2" %}
+            <label for="textarea2">Textarea</label>
+          </div>
+          <div class="col s12 center">
+            <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967;">Guardar</button>
+          </div>
 
-                </form>
+        </form>
+      </div>
+
+      <!-- Aula -->
+      <div class="row" id="aula-form">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12 box">
+              <input id="aula_name" type="text" class="white-text" name="aula_name">
+              <label for="aula_name">Nombre</label>
             </div>
-
-            <!-- Aula -->
-            <div class="row" id="aula-form">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Aula</label>
-                        </div>
-                        <div class="input-field col s12 box">
-                            <input id="last_name" type="text" class="validate white-text">
-                            <label for="last_name">Last Name</label>
-                        </div>
-                    </div>
-                </form>
+            <div class="input-field col s12 box">
+              <input id="aula_description" type="text" class="white-text" name="aula_description">
+              <label for="aula_description">Descripcion</label>
             </div>
-
-        </ul>
-        <!-- CARDS -->
-        <div class="cont-cards">
-
-            <!-- Persona -->
-            <div class="row col s12 m11 l6 nomargin">
-                <div class="card white z-depth-1">
-                    <div class="card-content white-text">
-                        <span class="card-title black-text">Persona</span>
-                        <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="grey-text noupper">24 de Mayo de 2017</a>
-                        <a class="right"><i class="material-icons blue-text blue-text text-lighten-1">person</i></a>
-                    </div>
-                </div>
+            <div class="input-field col s12 box">
+              <input id="aula_red" type="text" class="white-text" name="aula_red">
+              <label for="aula_red">IP</label>
             </div>
-
-            <!-- Aula -->
-            <div class="row col s12 m11 l6 nomargin">
-                <div class="card white z-depth-1">
-                    <div class="card-content white-text">
-                        <span class="card-title black-text">Aula</span>
-                        <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="grey-text noupper">24 de Mayo de 2017</a>
-                        <a class="right"><i class="material-icons blue-grey-text text-lighten-1">class</i></a>
-                    </div>
-                </div>
+            <div class="input-field col s12 box">
+              <input id="aula_subnet" type="text" class="white-text" name="aula_subnet">
+              <label for="aula_subnet">Subnet</label>
             </div>
-
-            <!-- Permiso -->
-            <div class="row col s12 m11 l6 nomargin">
-                <div class="card white z-depth-1">
-                    <div class="card-content white-text">
-                        <span class="card-title black-text">Permiso</span>
-                        <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="grey-text noupper">24 de Mayo de 2017</a>
-                        <a class="right"><i class="material-icons yellow-text blue-text text-darken-1">lock</i></a>
-                    </div>
-                </div>
+            <div class="input-field col s12">
+              <select multiple>
+                  <option value="" disabled selected class="white-text">Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              <label>Categorias</label>
             </div>
-
-            <!-- Categoria -->
-            <div class="row col s12 m11 l6 nomargin">
-                <div class="card white z-depth-1">
-                    <div class="card-content white-text">
-                        <span class="card-title black-text">Categoria</span>
-                        <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="grey-text noupper">24 de Mayo de 2017</a>
-                        <a class="right"><i class="material-icons red-text text-lighten-1">loyalty</i></a>
-                    </div>
-                </div>
+            <div class="input-field col s12">
+              <select multiple>
+                  <option value="" disabled selected class="white-text">Choose your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              <label>Permisos</label>
             </div>
+            <div class="col s12 center">
+              <button type="submit" class="btnSave btn z-depth-0" style="background-color: #00c967; margin-bottom:20px;">Guardar</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
+    </ul>
+    <!-- CARDS -->
+    <div class="cont-cards">
+
+      <!-- Persona -->
+      <div class="row col s12 m11 l6 nomargin">
+        <div class="card white z-depth-1">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Persona</span>
+            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a class="grey-text noupper">24 de Mayo de 2017</a>
+            <a class="right"><i class="material-icons blue-text blue-text text-lighten-1">person</i></a>
+          </div>
         </div>
+      </div>
+
+      <!-- Aula -->
+      <div class="row col s12 m11 l6 nomargin">
+        <div class="card white z-depth-1">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Aula</span>
+            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a class="grey-text noupper">24 de Mayo de 2017</a>
+            <a class="right"><i class="material-icons blue-grey-text text-lighten-1">class</i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Permiso -->
+      <div class="row col s12 m11 l6 nomargin">
+        <div class="card white z-depth-1">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Permiso</span>
+            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a class="grey-text noupper">24 de Mayo de 2017</a>
+            <a class="right"><i class="material-icons yellow-text blue-text text-darken-1">lock</i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoria -->
+      <div class="row col s12 m11 l6 nomargin">
+        <div class="card white z-depth-1">
+          <div class="card-content white-text">
+            <span class="card-title black-text">Categoria</span>
+            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a class="grey-text noupper">24 de Mayo de 2017</a>
+            <a class="right"><i class="material-icons red-text text-lighten-1">loyalty</i></a>
+          </div>
+        </div>
+      </div>
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="{% static 'js/materialize.min.js' %}"></script>
-    <script>
-        var ani_completed = false;
 
-        $(document).ready(function() {
-            $('.chips').material_chip();
-            $('.chips-initial').material_chip({
-                data: [{
-                    tag: 'Apple',
-                }, {
-                    tag: 'Microsoft',
-                }, {
-                    tag: 'Google',
-                }],
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{% static 'js/materialize.min.js' %}"></script>
+  <script>
+    var ani_completed = false;
+
+    $(document).ready(function() {
+
+      $("#category-form").hide();
+      $("#persona-form").hide();
+      $("#permiso-form").hide();
+      $("#aula-form").hide();
+      $('select').material_select();
+      $('.button-collapse').sideNav();
+      $(".side-nav li a").click(function(e) {
+        if (ani_completed == false) {
+
+          switch ($(this).attr('id')) {
+            case 'btn-ca':
+              $("#category-form").delay(300).fadeIn("fast");
+              break;
+            case 'btn-pa':
+              $("#persona-form").delay(300).fadeIn("fast");
+              break;
+            case 'btn-po':
+              $("#permiso-form").delay(300).fadeIn("fast");
+              break;
+            case 'btn-au':
+              $("#aula-form").delay(300).fadeIn("fast");
+              break;
+          }
+          $('.side-nav li a').not(this).each(function() {
+            $(".side-nav li i").text("remove");
+
+            $(this).css({
+              "visibility": "hidden",
+              display: 'block'
+            }).slideUp();
+
+            $(".v-align").animate({
+              paddingTop: "5vh",
+              height: "15vh"
+            }, 0, function() {
+
             });
-            $('.chips-placeholder').material_chip({
-                placeholder: 'Enter a tag',
-                secondaryPlaceholder: '+Tag',
+          });
+          ani_completed = true;
+        } else {
+          $('.side-nav li a').not(this).each(function() {
+            $(".side-nav li i").text("add");
+            $(this).css({
+              "visibility": "visible",
+              display: 'block'
+            }).slideDown();
+
+            $(".v-align").animate({
+              paddingTop: "30vh"
+            }, 0, function() {
+              $("#category-form").hide();
+              $("#permiso-form").hide();
+              $("#persona-form").hide();
+              $("#aula-form").hide();
             });
-            $('.chips-autocomplete').material_chip({
-                autocompleteOptions: {
-                    data: {
-                        'Apple': null,
-                        'Microsoft': null,
-                        'Google': null
-                    },
-                    limit: Infinity,
-                    minLength: 1
-                }
-            });
-
-            $("#category-form").hide();
-            $("#persona-form").hide();
-            $("#permiso-form").hide();
-            $("#aula-form").hide();
-
-            $('.button-collapse').sideNav();
-            $(".side-nav li a").click(function(e) {
-                if (ani_completed == false) {
-
-                    switch ($(this).attr('id')) {
-                        case 'btn-ca':
-                            $("#category-form").delay(300).fadeIn("fast");
-                            break;
-                        case 'btn-pa':
-                            $("#persona-form").delay(300).fadeIn("fast");
-                            break;
-                        case 'btn-po':
-                            $("#permiso-form").delay(300).fadeIn("fast");
-                            break;
-                        case 'btn-au':
-                            $("#aula-form").delay(300).fadeIn("fast");
-                            break;
-                    }
-                    $('.side-nav li a').not(this).each(function() {
-                        $(".side-nav li i").text("remove");
-
-                        $(this).css({
-                            "visibility": "hidden",
-                            display: 'block'
-                        }).slideUp();
-
-                        $(".v-align").animate({
-                            paddingTop: "5vh",
-                            height: "15vh"
-                        }, 0, function() {
-
-                        });
-                    });
-                    ani_completed = true;
-                } else {
-                    $('.side-nav li a').not(this).each(function() {
-                        $(".side-nav li i").text("add");
-                        $(this).css({
-                            "visibility": "visible",
-                            display: 'block'
-                        }).slideDown();
-
-                        $(".v-align").animate({
-                            paddingTop: "30vh"
-                        }, 0, function() {
-                            $("#category-form").hide();
-                            $("#permiso-form").hide();
-                            $("#persona-form").hide();
-                            $("#aula-form").hide();
-                        });
-                    });
-                    ani_completed = false;
-                }
-            });
-        });
-    </script>
+          });
+          ani_completed = false;
+        }
+      });
+    });
+  </script>
 
 </body>
 

@@ -26,8 +26,6 @@ a:focus {
 
 .side-nav span {
     color: #FFF;
-    text-transform: uppercase;
-    font-weight: 600;
 }
 
 .side-nav i {
@@ -43,6 +41,18 @@ a:focus {
     transition: .4s;
     padding-top: calc(55vh - 170px);
     height: 100vh;
+}
+
+.caret{
+  color: white !important;
+}
+
+input.select-dropdown{
+  color: #FFF;
+}
+
+.select-wrapper span label{
+  margin-top: -30px;
 }
 
 .v-align a {
