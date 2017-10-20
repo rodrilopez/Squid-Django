@@ -36,3 +36,14 @@ def createCategory(request):
             category = form.save(commit=False)
             category.save()
     return redirect(reverse('main:index'),request)
+
+
+def createPerson(request):
+    if request.method == 'POST':
+        queryset = request.POST
+        person = Person()
+        person.name = queryset['person_name']
+        person.description = queryset['person_description']
+        person.ip = queryset['person_ip']
+        person.save()
+    return redirect(reverse('main:index'),request)

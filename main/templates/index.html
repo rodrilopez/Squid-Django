@@ -55,7 +55,8 @@
 
       <!-- Persona -->
       <div class="row" id="persona-form">
-        <form class="col s12">
+        <form class="col s12" enctype="multipart/form-data" method="post" action="/person">
+          {% csrf_token %}
           <div class="row">
             <div class="input-field col s12 box">
               <input id="person_name" type="text" class="white-text" name="person_name">
@@ -70,7 +71,7 @@
               <label for="person_ip">IP</label>
             </div>
             <div class="input-field col s12">
-              <select multiple>
+              <select multiple name="person_category">
                   <option value="" disabled selected class="white-text">Choose your option</option>
                   {% for category in categorys %}
                   <option value={{category.id}}>{{category.name}}</option>
@@ -79,7 +80,7 @@
               <label>Categorias</label>
             </div>
             <div class="input-field col s12">
-              <select multiple>
+              <select multiple="multiple" name="person_permission">
                   <option value="" disabled selected class="white-text">Choose your option</option>
                   {% for permiso in permisos%}
                   <option value={{permiso.id}}>{{permiso.name}}</option>
