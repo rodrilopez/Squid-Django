@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Global -->
-  <title>Interné</title>
+  <title>SquidDjango</title>
   <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8" />
 
   <!-- CSS -->
@@ -17,7 +17,7 @@
 <body class="grey lighten-4">
   <div class="row">
     <ul id="slide-out" class="col m4 l3 side-nav fixed green accent-3 z-depth-2 hide-on-small-only tr">
-      <div class="center"><a class="white-text title">CENTRO DE GESTION</a></div>
+      <div class="center"><a href={% url 'main:index' %} class="white-text title">CENTRO DE GESTION</a></div>
       <div class="divider green darken-1"></div>
       <div class="v-align">
         <li><a id="btn-ca" href="#!"><i class="material-icons">add</i><span>Categoria</span></a></li>
@@ -30,7 +30,7 @@
 
       <!-- Categoria -->
       <div class="row" id="category-form">
-        <form method="post" class="col s12" enctype="multipart/form-data">
+        <form method="post" action="/category" class="col s12" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="input-field col s12">
             {% render_field form_category.name type="search" id="name" %}
@@ -72,16 +72,18 @@
             <div class="input-field col s12">
               <select multiple>
                   <option value="" disabled selected class="white-text">Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
+                  {% for category in categorys %}
+                  <option value={{category.id}}>{{category.name}}</option>
+                  {% endfor %}
                 </select>
               <label>Categorias</label>
             </div>
             <div class="input-field col s12">
               <select multiple>
                   <option value="" disabled selected class="white-text">Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
+                  {% for permiso in permisos%}
+                  <option value={{permiso.id}}>{{permiso.name}}</option>
+                  {%endfor%}
                 </select>
               <label>Permisos</label>
             </div>
@@ -95,7 +97,7 @@
 
       <!-- Permiso -->
       <div class="row" id="permiso-form">
-        <form method="post" class="col s12" enctype="multipart/form-data">
+        <form method="post" action="/perm" class="col s12" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="input-field col s12">
             {% render_field form_permission.name type="permission_name" id="name" %}
@@ -107,10 +109,10 @@
           </div>
           <div class="switch center">
             <label class="white-text">
-                        Off
+                        Black List
                         {% render_field form_permission.is_white_list  type="checkbox" %}
                         <span class="lever white-text"></span>
-                        On
+                        White List
                         </label>
           </div><br>
           <div class="input-field col s12">
@@ -147,16 +149,18 @@
             <div class="input-field col s12">
               <select multiple>
                   <option value="" disabled selected class="white-text">Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
+                  {% for category in categorys %}
+                  <option value={{category.id}}>{{category.name}}</option>
+                  {% endfor %}
                 </select>
               <label>Categorias</label>
             </div>
             <div class="input-field col s12">
               <select multiple>
                   <option value="" disabled selected class="white-text">Choose your option</option>
-                  <option value="1">Option 1</option>
-                  <option value="2">Option 2</option>
+                  {% for permiso in permisos%}
+                  <option value={{permiso.id}}>{{permiso.name}}</option>
+                  {%endfor%}
                 </select>
               <label>Permisos</label>
             </div>
@@ -200,11 +204,14 @@
       </div>
 
       <!-- Permiso -->
+      {% for permiso in permisos %}
       <div class="row col s12 m11 l6 nomargin">
         <div class="card white z-depth-1">
           <div class="card-content white-text">
-            <span class="card-title black-text">Permiso</span>
-            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title black-text">{{permiso.name}}</span>
+            <p class="grey-text text-darken-1">
+            {{permiso.description}}
+            </p>
           </div>
           <div class="card-action">
             <a class="grey-text noupper">24 de Mayo de 2017</a>
@@ -212,13 +219,15 @@
           </div>
         </div>
       </div>
+      {% endfor %}
 
       <!-- Categoria -->
+      {% for category in categorys%}
       <div class="row col s12 m11 l6 nomargin">
         <div class="card white z-depth-1">
           <div class="card-content white-text">
-            <span class="card-title black-text">Categoria</span>
-            <p class="grey-text text-darken-1">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            <span class="card-title black-text">{{category.name}}</span>
+            <p class="grey-text text-darken-1">{{category.description}}</p>
           </div>
           <div class="card-action">
             <a class="grey-text noupper">24 de Mayo de 2017</a>
@@ -226,6 +235,7 @@
           </div>
         </div>
       </div>
+      {% endfor %}
 
     </div>
 
