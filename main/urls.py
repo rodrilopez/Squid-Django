@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^perm', createPerm, name='create-permission'),
     url(r'^category', createCategory, name='create-category'),
     url(r'^person', createPerson, name='create-person'),
+    url(r'^group', createGroup, name='create-group'),
 ]
