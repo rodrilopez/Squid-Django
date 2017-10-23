@@ -14,11 +14,18 @@ class Permission(models.Model):
     is_white_list = models.BooleanField()
     permission = models.TextField()
 
+    def __str__(self):
+        return self.name
+
 
 class Category(models.Model):
     name = models.CharField(max_length=32)
     description = models.CharField(max_length=64)
     permission = models.TextField()
+
+    def __str__(self):
+        return self.name
+
 
 
 class Group(models.Model):
@@ -27,11 +34,17 @@ class Group(models.Model):
     red = models.CharField(max_length=64)
     subnet = models.CharField(max_length=128)
 
+    def __str__(self):
+        return self.name
+
 
 class Person(models.Model):
-    name = models.CharField(max_length=32)
+    name = models.CharField('nombre',max_length=32)
     description = models.CharField(max_length=64)
     ip = models.CharField(max_length=64)
+
+    def __str__(self):
+        return self.name
 
 
 class PermissionGroup(models.Model):
@@ -40,9 +53,15 @@ class PermissionGroup(models.Model):
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
 
+    def __str__(self):
+        return self.permission.name
+
 
 class CategoryGroup(models.Model):
     category = models.ForeignKey(Category)
     content_type = models.ForeignKey(ContentType)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
+
+    def __str__(self):
+        return self.category.name
