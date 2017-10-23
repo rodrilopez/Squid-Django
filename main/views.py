@@ -40,10 +40,26 @@ def createCategory(request):
 
 def createPerson(request):
     if request.method == 'POST':
-        queryset = request.POST
+        data = dict(request.POST)
         person = Person()
-        person.name = queryset['person_name']
-        person.description = queryset['person_description']
-        person.ip = queryset['person_ip']
+        person.name = data['person_name']
+        person.description = data['person_description']
+        person.ip = data['person_ip']
         person.save()
+        try:
+            if data['person_category']:
+                for x in data['person_category']:
+                    cat = Category.objects.get(id=x)
+                    group = CategoryGroup(category=cat,content_object=person)
+                    group.save()
+        except Exception as e:
+            print e
+        try:
+            if data['person_permission']:
+                for x in data['person_permission']:
+                    perm = Permission.objects.get(id=x)
+                    group = PermissionGroup(permission=perm,content_object=person)
+                    group.save()
+        except Exception as e:
+            print e
     return redirect(reverse('main:index'),request)
